@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#052b60">
+  <meta name="description" content="Okyanus Halı Koltuk Yıkama Fabrikası ile halı, koltuk, yatak, battaniye, sandalye ve stor perde temizliği. Hızlı servis ve kolay randevu için hemen arayın.">
+  <title>Okyanus Halı Koltuk Yıkama Fabrikası | Hızlı Servis</title>
+
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preload" as="image" href="eee111.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#031b3d', 900: '#052b60', 800: '#063d7f' },
+            ocean: { 400: '#18b9f2', 500: '#069ee5', 600: '#0075c9' },
+            sun: '#ffd51e'
+          },
+          boxShadow: {
+            glow: '0 15px 40px rgba(6, 158, 229, .28)',
+            card: '0 18px 50px rgba(3, 27, 61, .10)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { -webkit-tap-highlight-color: transparent; }
+    body { text-rendering: optimizeLegibility; }
+    .hero-grid {
+      background:
+        radial-gradient(circle at 80% 15%, rgba(24,185,242,.3), transparent 32%),
+        linear-gradient(135deg, #031b3d 0%, #052b60 52%, #0075c9 100%);
+    }
+    .wave-mask { position: relative; overflow: hidden; }
+    .wave-mask::after {
+      content: ""; position: absolute; right: -8%; bottom: -70px; width: 60%; height: 145px;
+      border-radius: 50% 50% 0 0; background: rgba(255,255,255,.08); transform: rotate(-4deg);
+    }
+    .water-card::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: linear-gradient(135deg, rgba(255,255,255,.45), transparent 42%);
+    }
+    .shine { position: relative; overflow: hidden; }
+    .shine::after {
+      content: ""; position: absolute; top: -80%; left: -45%; width: 30%; height: 260%;
+      background: rgba(255,255,255,.28); transform: rotate(25deg); transition: left .55s ease;
+    }
+    .shine:hover::after { left: 125%; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto !important; }
+      .shine::after { display: none; }
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden bg-slate-50 pb-20 text-slate-800 antialiased md:pb-0">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-navy-950/95 text-white shadow-lg backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-2 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
+      <a href="#" class="flex min-w-0 flex-1 items-center gap-2 sm:gap-3" aria-label="Okyanus ana sayfa">
+        <span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-ocean-500 text-lg shadow-glow sm:h-11 sm:w-11 sm:text-xl">
+          <i class="fa-solid fa-water" aria-hidden="true"></i>
+        </span>
+        <span class="min-w-0 leading-tight">
+          <strong class="block truncate text-base font-black tracking-wide sm:text-xl">OKYANUS</strong>
+          <span class="block truncate text-[8px] font-bold tracking-[.08em] text-sky-200 sm:text-xs sm:tracking-[.16em]">HALI KOLTUK YIKAMA FABRİKASI</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-7 text-sm font-semibold lg:flex" aria-label="Ana menü">
+        <a href="#hizmetler" class="transition hover:text-sun">Hizmetler</a>
+        <a href="#avantajlar" class="transition hover:text-sun">Neden Biz?</a>
+        <a href="#fark" class="transition hover:text-sun">Gözle Görülür Fark</a>
+        <a href="#randevu" class="transition hover:text-sun">Randevu</a>
+      </nav>
+
+      <div class="hidden items-center gap-2 sm:flex">
+        <a href="https://wa.me/905441505172?text=Merhaba%2C%20hizmetleriniz%20hakk%C4%B1nda%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener" class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-500 text-xl transition hover:bg-emerald-400" aria-label="WhatsApp ile yazın">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="tel:+905441505172" class="shine rounded-xl bg-sun px-5 py-2 text-center text-navy-950 shadow-lg transition hover:-translate-y-0.5">
+          <span class="block text-[10px] font-extrabold uppercase tracking-widest">Hemen Arayın</span>
+          <strong class="text-base">0544 150 51 72</strong>
+        </a>
+      </div>
+      <a href="tel:+905441505172" class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-sun text-lg text-navy-950 sm:hidden" aria-label="0544 150 51 72 numarasını ara">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-grid wave-mask relative isolate text-white">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24">
+        <div class="relative z-10 min-w-0">
+          <div class="mb-5 inline-flex max-w-full items-center gap-2 rounded-full border border-sky-300/30 bg-white/10 px-3 py-2 text-[10px] font-bold uppercase tracking-wide text-sky-100 sm:px-4 sm:text-xs sm:tracking-wider">
+            <i class="fa-solid fa-shield-heart text-sun" aria-hidden="true"></i>
+            Profesyonel Ekip • Hijyenik Temizlik
+          </div>
+          <p class="mb-2 text-sm font-semibold italic text-sky-200 sm:text-base">Temizliğin En Doğal Hali...</p>
+          <h1 class="max-w-3xl break-words text-3xl font-black leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+            Halı ve Koltuklarınız <span class="text-sun">Profesyonel Ellerde</span>
+          </h1>
+          <p class="mt-5 max-w-2xl text-base leading-relaxed text-sky-100 sm:text-lg">
+            Güçlü ekipman, doğa dostu ürünler ve titiz işçilikle yaşam alanlarınıza ferahlık katıyoruz. Hızlı servis için hemen bize ulaşın.
+          </p>
+
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+            <a href="tel:+905441505172" class="shine flex min-h-14 w-full items-center justify-center gap-3 rounded-2xl bg-sun px-4 py-3 text-base font-black text-navy-950 shadow-xl transition hover:-translate-y-1 sm:w-auto sm:px-6 sm:text-lg">
+              <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+              0544 150 51 72
+            </a>
+            <a href="https://wa.me/905441505172?text=Merhaba%2C%20h%C4%B1zl%C4%B1%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener" class="flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl border border-emerald-300/50 bg-emerald-500 px-4 py-3 text-base font-extrabold shadow-xl transition hover:-translate-y-1 hover:bg-emerald-400 sm:w-auto sm:gap-3 sm:px-6 sm:text-lg">
+              <i class="fa-brands fa-whatsapp text-2xl" aria-hidden="true"></i>
+              WhatsApp'tan Fiyat Al
+            </a>
+          </div>
+
+          <div class="mt-8 grid max-w-xl grid-cols-1 gap-3 text-center text-xs font-bold sm:grid-cols-3 sm:text-sm">
+            <div class="rounded-xl border border-white/10 bg-white/10 p-3"><i class="fa-solid fa-leaf mb-2 block text-xl text-emerald-300"></i>Doğa Dostu</div>
+            <div class="rounded-xl border border-white/10 bg-white/10 p-3"><i class="fa-solid fa-truck-fast mb-2 block text-xl text-sun"></i>Hızlı Servis</div>
+            <div class="rounded-xl border border-white/10 bg-white/10 p-3"><i class="fa-solid fa-thumbs-up mb-2 block text-xl text-sky-300"></i>Memnuniyet</div>
+          </div>
+        </div>
+
+        <div class="relative z-10 mx-auto min-w-0 w-full max-w-lg lg:max-w-none">
+          <div class="absolute -inset-4 rounded-[2rem] bg-sky-300/20 blur-2xl" aria-hidden="true"></div>
+          <img src="eee111.jpg" alt="Okyanus Halı Koltuk Yıkama Fabrikası hizmetleri ve profesyonel temizlik tesisi" width="546" height="819" fetchpriority="high" class="relative mx-auto max-h-[570px] w-full rounded-[2rem] border-4 border-white/20 object-cover object-center shadow-2xl">
+          <div class="absolute -bottom-5 left-1/2 flex w-[88%] -translate-x-1/2 items-center justify-center gap-3 rounded-2xl bg-white px-4 py-3 text-center text-sm font-extrabold text-navy-900 shadow-2xl">
+            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-ocean-500 text-white"><i class="fa-solid fa-check"></i></span>
+            Temiz halılar, tertemiz koltuklar
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hizmetler" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto mb-12 max-w-2xl text-center">
+          <span class="text-sm font-black uppercase tracking-[.2em] text-ocean-600">Uzmanlık Alanlarımız</span>
+          <h2 class="mt-3 text-3xl font-black text-navy-950 sm:text-4xl">Profesyonel Yıkama Hizmetleri</h2>
+          <p class="mt-3 text-slate-600">Evinizin en çok kullanılan yüzeylerini güçlü ekipmanlarımızla derinlemesine temizliyoruz.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="water-card relative rounded-3xl border border-sky-100 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:border-ocean-400">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky-100 text-2xl text-ocean-600"><i class="fa-solid fa-rug"></i></span>
+            <h3 class="mt-5 text-xl font-black text-navy-900">Halı Yıkama</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Toz, kir ve lekeler için halının dokusuna uygun, derinlemesine profesyonel temizlik.</p>
+          </article>
+          <article class="water-card relative rounded-3xl border border-sky-100 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:border-ocean-400">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky-100 text-2xl text-ocean-600"><i class="fa-solid fa-couch"></i></span>
+            <h3 class="mt-5 text-xl font-black text-navy-900">Koltuk Yıkama</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Kumaşa zarar vermeden yerinde, güçlü vakumlama ile hijyenik koltuk temizliği.</p>
+          </article>
+          <article class="water-card relative rounded-3xl border border-sky-100 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:border-ocean-400">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky-100 text-2xl text-ocean-600"><i class="fa-solid fa-blanket"></i></span>
+            <h3 class="mt-5 text-xl font-black text-navy-900">Battaniye Yıkama</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Yumuşaklığını koruyan uygun programlarla temiz ve ferah battaniyeler.</p>
+          </article>
+          <article class="water-card relative rounded-3xl border border-sky-100 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:border-ocean-400">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky-100 text-2xl text-ocean-600"><i class="fa-solid fa-chair"></i></span>
+            <h3 class="mt-5 text-xl font-black text-navy-900">Sandalye Yıkama</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Sandalye döşemelerinde biriken kir ve lekeler için etkili yerinde temizlik.</p>
+          </article>
+          <article class="water-card relative rounded-3xl border border-sky-100 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:border-ocean-400">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky-100 text-2xl text-ocean-600"><i class="fa-solid fa-bed"></i></span>
+            <h3 class="mt-5 text-xl font-black text-navy-900">Yatak Yıkama</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Yatak yüzeyinde hijyeni destekleyen detaylı temizlik ve güçlü vakumlama.</p>
+          </article>
+          <article class="water-card relative rounded-3xl border border-sky-100 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:border-ocean-400">
+            <span class="grid h-14 w-14 place-items-center rounded-2xl bg-sky-100 text-2xl text-ocean-600"><i class="fa-solid fa-table-columns"></i></span>
+            <h3 class="mt-5 text-xl font-black text-navy-900">Stor Perde Yıkama</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">Stor perdelerin mekanizma ve dokusuna özen gösteren güvenli temizlik.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="avantajlar" class="bg-navy-950 py-20 text-white">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+        <div class="min-w-0">
+          <span class="text-sm font-black uppercase tracking-[.2em] text-sky-300">Okyanus Farkı</span>
+          <h2 class="mt-3 text-3xl font-black sm:text-4xl">Temizlikte Güven,<br><span class="text-sun">Hizmette Hız</span></h2>
+          <p class="mt-5 leading-relaxed text-sky-100">Modern ekipmanlarımız ve özenli hizmet anlayışımızla temizliği yalnızca görünürde bırakmıyoruz.</p>
+          <a href="#randevu" class="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-extrabold text-navy-950 transition hover:bg-sun sm:w-auto sm:text-base">Servis Talebi Oluştur <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5"><i class="fa-solid fa-wand-magic-sparkles text-2xl text-sun"></i><h3 class="mt-3 font-extrabold">Derinlemesine Temizlik</h3></div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5"><i class="fa-solid fa-shield-virus text-2xl text-sky-300"></i><h3 class="mt-3 font-extrabold">Hijyenik ve Sağlıklı Ortam</h3></div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5"><i class="fa-solid fa-leaf text-2xl text-emerald-300"></i><h3 class="mt-3 font-extrabold">Doğa Dostu Temizlik Ürünleri</h3></div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5"><i class="fa-solid fa-clock text-2xl text-orange-300"></i><h3 class="mt-3 font-extrabold">Hızlı Servis</h3></div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5 md:col-span-2"><i class="fa-solid fa-handshake text-2xl text-sun"></i><h3 class="mt-3 font-extrabold">Müşteri Memnuniyeti</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tesisimiz" class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div class="max-w-2xl">
+            <span class="text-sm font-black uppercase tracking-[.2em] text-ocean-600">Tesisimizden Gerçek Kareler</span>
+            <h2 class="mt-3 text-3xl font-black tracking-tight text-navy-950 sm:text-4xl">Profesyonel Süreç, Güvenilir Sonuç</h2>
+            <p class="mt-4 leading-relaxed text-slate-600">Halı ve stor perdelerinizi modern ekipmanlarla, kontrollü ve hijyenik bir ortamda özenle temizliyoruz.</p>
+          </div>
+          <div class="flex w-full items-center gap-3 rounded-2xl border border-emerald-100 bg-emerald-50 px-4 py-3 text-sm font-extrabold text-emerald-700 sm:w-auto sm:px-5">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-emerald-500 text-white"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+            Kalite Kontrollü Hizmet
+          </div>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
+          <figure class="group relative overflow-hidden rounded-[2rem] bg-navy-950 shadow-card">
+            <img src="resim1.jpg" alt="Okyanus tesisinde profesyonel makine ile halı yıkama süreci" width="1024" height="768" loading="lazy" decoding="async" class="aspect-[4/3] h-full max-h-[520px] w-full object-cover transition duration-500 group-hover:scale-[1.025]">
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950 via-navy-950/75 to-transparent p-4 pt-20 text-white sm:p-8 sm:pt-24">
+              <span class="mb-2 inline-flex items-center gap-2 rounded-full bg-sun px-3 py-1 text-[11px] font-black uppercase tracking-wider text-navy-950"><i class="fa-solid fa-gears" aria-hidden="true"></i> Son Teknoloji</span>
+              <figcaption class="text-xl font-black sm:text-2xl">Profesyonel Halı Yıkama Hattı</figcaption>
+              <p class="mt-2 max-w-xl text-sm leading-relaxed text-sky-100">Basınçlı yıkama ve güçlü makine sistemleriyle kontrollü, etkili temizlik.</p>
+            </div>
+          </figure>
+
+          <figure class="group relative overflow-hidden rounded-[2rem] bg-navy-950 shadow-card">
+            <img src="resim2.jpg" alt="Okyanus tesisinde temizlenmiş stor perdeler ve düzenli çalışma alanı" width="1016" height="670" loading="lazy" decoding="async" class="aspect-[4/3] h-full max-h-[520px] w-full object-cover transition duration-500 group-hover:scale-[1.025]">
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950 via-navy-950/75 to-transparent p-4 pt-20 text-white sm:p-8 sm:pt-24">
+              <span class="mb-2 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-ocean-600"><i class="fa-solid fa-table-columns" aria-hidden="true"></i> Özenli İşçilik</span>
+              <figcaption class="text-xl font-black sm:text-2xl">Stor Perde Yıkama Alanımız</figcaption>
+              <p class="mt-2 text-sm leading-relaxed text-sky-100">Temiz, düzenli tesis ve perde dokusuna uygun profesyonel uygulama.</p>
+            </div>
+          </figure>
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 gap-3 text-sm font-bold text-navy-900 md:grid-cols-3">
+          <div class="flex items-center gap-3 rounded-2xl bg-sky-50 p-4"><i class="fa-solid fa-circle-check text-lg text-ocean-500"></i> Modern yıkama makineleri</div>
+          <div class="flex items-center gap-3 rounded-2xl bg-sky-50 p-4"><i class="fa-solid fa-circle-check text-lg text-ocean-500"></i> Hijyenik çalışma ortamı</div>
+          <div class="flex items-center gap-3 rounded-2xl bg-sky-50 p-4"><i class="fa-solid fa-circle-check text-lg text-ocean-500"></i> Dokuya özel temizlik</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fark" class="relative overflow-hidden py-20">
+      <div class="absolute -right-32 top-10 h-80 w-80 rounded-full bg-sky-200/50 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -left-32 bottom-0 h-72 w-72 rounded-full bg-blue-200/40 blur-3xl" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-sky-100 px-4 py-2 text-xs font-black uppercase tracking-[.2em] text-ocean-600">
+            <i class="fa-solid fa-sparkles" aria-hidden="true"></i> Gözle Görülür Fark
+          </span>
+          <h2 class="mt-4 text-3xl font-black tracking-tight text-navy-950 sm:text-4xl">Neden Okyanus?</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">Teknolojiyi deneyimli ekibimizin titizliğiyle buluşturuyor, her aşamada kaliteli ve güvenilir hizmet sunuyoruz.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="group relative min-w-0 overflow-hidden rounded-3xl border border-sky-100 bg-white p-5 shadow-card transition duration-300 hover:-translate-y-2 hover:border-ocean-400 sm:p-7">
+            <div class="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-sky-50 transition group-hover:bg-sky-100" aria-hidden="true"></div>
+            <span class="relative grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-ocean-400 to-ocean-600 text-2xl text-white shadow-glow">
+              <i class="fa-solid fa-gears" aria-hidden="true"></i>
+            </span>
+            <p class="mt-7 text-xs font-black uppercase tracking-[.18em] text-ocean-600">Güçlü Teknoloji</p>
+            <h3 class="mt-2 text-2xl font-black text-navy-950">Profesyonel Ekipmanlar</h3>
+            <p class="mt-3 leading-relaxed text-slate-600">Son teknoloji yıkama makineleri ve güçlü vakum sistemleriyle yüzeyin derinliklerine ulaşan etkili temizlik.</p>
+            <div class="mt-6 flex items-center gap-2 text-sm font-extrabold text-navy-900"><i class="fa-solid fa-circle-check text-emerald-500"></i> Modern makine parkuru</div>
+          </article>
+
+          <article class="group relative min-w-0 overflow-hidden rounded-3xl border border-sky-100 bg-white p-5 shadow-card transition duration-300 hover:-translate-y-2 hover:border-ocean-400 sm:p-7">
+            <div class="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-sky-50 transition group-hover:bg-sky-100" aria-hidden="true"></div>
+            <span class="relative grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-navy-800 to-ocean-500 text-2xl text-white shadow-glow">
+              <i class="fa-solid fa-face-smile-beam" aria-hidden="true"></i>
+            </span>
+            <p class="mt-7 text-xs font-black uppercase tracking-[.18em] text-ocean-600">Önce Memnuniyet</p>
+            <div class="mt-2 flex items-end gap-2">
+              <strong class="text-5xl font-black leading-none text-navy-950">%100</strong>
+              <span class="pb-1 text-sm font-extrabold text-slate-500">hedefimiz</span>
+            </div>
+            <h3 class="mt-3 text-2xl font-black text-navy-950">Müşteri Memnuniyeti</h3>
+            <p class="mt-3 leading-relaxed text-slate-600">Planlamadan teslimata kadar şeffaf iletişim, özenli işçilik ve memnuniyet odaklı hizmet anlayışı.</p>
+          </article>
+
+          <article class="group relative min-w-0 overflow-hidden rounded-3xl border border-sky-100 bg-white p-5 shadow-card transition duration-300 hover:-translate-y-2 hover:border-ocean-400 sm:p-7 md:col-span-2 lg:col-span-1">
+            <div class="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-amber-50 transition group-hover:bg-yellow-100" aria-hidden="true"></div>
+            <span class="relative grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-yellow-300 to-orange-400 text-2xl text-navy-950 shadow-lg">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </span>
+            <p class="mt-7 text-xs font-black uppercase tracking-[.18em] text-orange-500">Güvenli Hizmet</p>
+            <h3 class="mt-2 text-2xl font-black text-navy-950">Leke Çıkarma Garantisi</h3>
+            <p class="mt-3 leading-relaxed text-slate-600">Lekenin ve kumaşın yapısına uygun profesyonel uygulamalarla ulaşılabilecek en iyi sonucu hedefliyoruz.</p>
+            <div class="mt-6 flex items-center gap-2 text-sm font-extrabold text-navy-900"><i class="fa-solid fa-circle-check text-emerald-500"></i> Dokuya uygun uygulama</div>
+          </article>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-5 rounded-3xl bg-navy-950 px-6 py-6 text-center text-white shadow-xl sm:flex-row sm:text-left lg:px-9">
+          <div>
+            <strong class="block text-xl font-black sm:text-2xl">Temizliğin farkını yaşamaya hazır mısınız?</strong>
+            <span class="mt-1 block text-sm text-sky-200">Hızlı fiyat ve servis bilgisi için hemen bize ulaşın.</span>
+          </div>
+          <a href="tel:+905441505172" class="shine inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-sun px-4 py-3 text-sm font-black text-navy-950 sm:w-auto sm:shrink-0 sm:px-6 sm:text-base">
+            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i> 0544 150 51 72
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="randevu" class="bg-sky-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto grid max-w-6xl grid-cols-1 overflow-hidden rounded-[2rem] bg-white shadow-card lg:grid-cols-[.85fr_1.15fr]">
+        <div class="hero-grid p-6 text-white sm:p-10">
+          <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-2xl text-sun"><i class="fa-solid fa-calendar-check"></i></span>
+          <h2 class="mt-6 text-3xl font-black">Hızlı Servis Talebi</h2>
+          <p class="mt-3 leading-relaxed text-sky-100">Bilgilerinizi bırakın, talebiniz WhatsApp üzerinden bize anında ulaşsın.</p>
+          <div class="mt-8 space-y-4 text-sm font-semibold">
+            <p class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sun"></i> Kolay ve hızlı iletişim</p>
+            <p class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sun"></i> İhtiyacınıza özel bilgilendirme</p>
+            <p class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sun"></i> Profesyonel servis planlaması</p>
+          </div>
+        </div>
+
+        <form id="serviceForm" class="min-w-0 p-6 sm:p-10" aria-label="Hızlı servis talep formu">
+          <div class="grid gap-5">
+            <label class="block">
+              <span class="mb-2 block text-sm font-bold text-navy-900">Adınız Soyadınız</span>
+              <span class="relative block"><i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i><input id="name" name="name" type="text" autocomplete="name" required placeholder="Adınızı yazın" class="w-full rounded-xl border border-slate-200 bg-slate-50 py-3.5 pl-11 pr-4 outline-none transition focus:border-ocean-500 focus:ring-4 focus:ring-sky-100"></span>
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-bold text-navy-900">Telefon Numaranız</span>
+              <span class="relative block"><i class="fa-solid fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="05xx xxx xx xx" pattern="[0-9\s()+-]{10,}" class="w-full rounded-xl border border-slate-200 bg-slate-50 py-3.5 pl-11 pr-4 outline-none transition focus:border-ocean-500 focus:ring-4 focus:ring-sky-100"></span>
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-bold text-navy-900">Hizmet Seçimi</span>
+              <span class="relative block"><i class="fa-solid fa-spray-can-sparkles absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i><select id="service" name="service" required class="w-full appearance-none rounded-xl border border-slate-200 bg-slate-50 py-3.5 pl-11 pr-10 outline-none transition focus:border-ocean-500 focus:ring-4 focus:ring-sky-100"><option value="" disabled selected>Hizmet seçin</option><option>Halı Yıkama</option><option>Koltuk Yıkama</option><option>Battaniye Yıkama</option><option>Sandalye Yıkama</option><option>Yatak Yıkama</option><option>Stor Perde Yıkama</option></select><i class="fa-solid fa-chevron-down pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-slate-400"></i></span>
+            </label>
+            <button type="submit" class="shine mt-2 flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-emerald-500 px-4 py-3.5 text-sm font-black text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-emerald-600 sm:gap-3 sm:px-6 sm:text-lg">
+              <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp ile Talep Gönder
+            </button>
+            <p class="text-center text-xs text-slate-500"><i class="fa-solid fa-lock mr-1"></i> Bilgileriniz yalnızca servis talebiniz için kullanılır.</p>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-navy-950 py-12 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-7 px-4 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
+      <div>
+        <div class="flex items-center justify-center gap-3 md:justify-start">
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-ocean-500"><i class="fa-solid fa-water"></i></span>
+          <strong class="text-xl font-black">OKYANUS</strong>
+        </div>
+        <p class="mt-3 text-sm font-semibold text-sky-200">Temiz halılar, tertemiz koltuklar</p>
+      </div>
+      <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+        <a href="tel:+905441505172" class="w-full rounded-xl bg-sun px-5 py-3 font-black text-navy-950 sm:w-auto"><i class="fa-solid fa-phone mr-2"></i>0544 150 51 72</a>
+        <a href="https://wa.me/905441505172?text=Merhaba%2C%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener" class="w-full rounded-xl bg-emerald-500 px-5 py-3 font-black sm:w-auto"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+      </div>
+    </div>
+    <div class="mx-auto mt-9 max-w-7xl border-t border-white/10 px-4 pt-6 text-center text-xs text-slate-400 sm:px-6 lg:px-8">
+      © <span id="year"></span> Okyanus Halı Koltuk Yıkama Fabrikası. Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 border-t border-white/20 bg-navy-950 p-2 pb-[max(.5rem,env(safe-area-inset-bottom))] shadow-[0_-8px_30px_rgba(3,27,61,.25)] md:hidden">
+    <a href="tel:+905441505172" class="flex min-h-14 min-w-0 items-center justify-center gap-2 rounded-l-xl bg-sun px-2 text-sm font-black text-navy-950 sm:px-3 sm:text-base" aria-label="0544 150 51 72 numarasını ara"><i class="fa-solid fa-phone-volume"></i> Hemen Ara</a>
+    <a href="https://wa.me/905441505172?text=Merhaba%2C%20h%C4%B1zl%C4%B1%20fiyat%20almak%20istiyorum." target="_blank" rel="noopener" class="flex min-h-14 min-w-0 items-center justify-center gap-2 rounded-r-xl bg-emerald-500 px-2 text-sm font-black text-white sm:px-3 sm:text-base" aria-label="WhatsApp ile fiyat al"><i class="fa-brands fa-whatsapp text-lg sm:text-xl"></i> Fiyat Al</a>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('serviceForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!this.reportValidity()) return;
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value;
+      const message = `Merhaba, servis talebi oluşturmak istiyorum.\n\nAd: ${name}\nTelefon: ${phone}\nHizmet: ${service}`;
+      window.open(`https://wa.me/905441505172?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
